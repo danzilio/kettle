@@ -1,3 +1,4 @@
+require 'simplecov'
 kettle = File.expand_path('../../lib', __FILE__)
 $LOAD_PATH.unshift(kettle) unless $LOAD_PATH.include?(kettle)
 
@@ -9,3 +10,5 @@ RSpec.configure do |c|
   c.formatter = 'documentation'
   c.color = true
 end
+
+SimpleCov.start
